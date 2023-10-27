@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patio de Juegos</title>
+    <style>
+        h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 50px;
+        }
+        .cuadrado-contenedor{
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .cuadrado{
+            padding: 100px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: aqua; 
+        }
+    </style>
+</head>
+<body>
+    
+    <h1> ¡Bienvenido! </h1>
+
+    <div class="cuadrado-contenedor">
+        {% for x in range (0, num): %}
+            <div class="cuadrado" style="background-color: {{ colorc }};"></div>
+        {% endfor %}
+    </div>
+</body>
+</html>
